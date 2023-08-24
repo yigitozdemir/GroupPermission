@@ -23,5 +23,7 @@ Route::controller(UserController::class)->prefix('user')->group(function(){
     //Route::post('register', 'register');
     Route::post('login', 'login');
     Route::middleware('auth:sanctum')->post('profile', 'profile');
+    Route::middleware('auth:sanctum')->post('edit', 'editPage');
+    Route::middleware('auth:sanctum')->post('delete', 'deletePage');
     Route::middleware('auth:sanctum')->post('memberships', 'memberships');
 });

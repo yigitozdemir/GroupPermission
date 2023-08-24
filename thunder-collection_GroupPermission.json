@@ -1,0 +1,189 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GroupPermission",
+    "dateExported": "2023-08-24T18:06:08.589Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f5a8ae61-8684-40d5-b772-d0b92754289c",
+            "colId": "026584b1-c768-4fe9-9c89-5901f4f0bef5",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://127.0.0.1:8000/api/user/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-24T16:50:42.701Z",
+            "modified": "2023-08-24T16:53:04.530Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"yigit@yigitnot.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3adab828-35de-4235-acc5-d9edc5dfd616",
+            "colId": "026584b1-c768-4fe9-9c89-5901f4f0bef5",
+            "containerId": "",
+            "name": "Login User2",
+            "url": "http://127.0.0.1:8000/api/user/login",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-08-24T17:59:57.459Z",
+            "modified": "2023-08-24T18:00:08.457Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"yigit2@yigitnot.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1efff34f-98f9-4237-b040-aea1e3a8dfe0",
+            "colId": "026584b1-c768-4fe9-9c89-5901f4f0bef5",
+            "containerId": "",
+            "name": "Login User3",
+            "url": "http://127.0.0.1:8000/api/user/login",
+            "method": "POST",
+            "sortNum": 17500,
+            "created": "2023-08-24T18:05:28.885Z",
+            "modified": "2023-08-24T18:05:39.621Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"yigit3@yigitnot.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b9d96a3f-0683-4600-886b-f75dd94888f3",
+            "colId": "026584b1-c768-4fe9-9c89-5901f4f0bef5",
+            "containerId": "",
+            "name": "Profile",
+            "url": "http://127.0.0.1:8000/api/user/profile",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-24T17:00:53.339Z",
+            "modified": "2023-08-24T17:53:52.039Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "1|laravel_sanctum_YLwARtfdwi3tdtR6dY4GhzNtYWZHCz3RoXD5SdBZ4cedaf6b"
+            },
+            "tests": []
+        },
+        {
+            "_id": "0cc5091f-17cd-4889-b78c-5a4dd76f2407",
+            "colId": "026584b1-c768-4fe9-9c89-5901f4f0bef5",
+            "containerId": "",
+            "name": "Edit",
+            "url": "http://127.0.0.1:8000/api/user/edit",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-08-24T17:59:19.977Z",
+            "modified": "2023-08-24T18:00:23.216Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "2|laravel_sanctum_wKIuwNA5aG5mLVS0XpmoKlJsHBtcHOXDYrk1k7n9f438c8b0"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6d63c202-9326-4c33-8f62-74d548410a2d",
+            "colId": "026584b1-c768-4fe9-9c89-5901f4f0bef5",
+            "containerId": "",
+            "name": "Delete",
+            "url": "http://127.0.0.1:8000/api/user/delete",
+            "method": "POST",
+            "sortNum": 27500,
+            "created": "2023-08-24T17:59:40.609Z",
+            "modified": "2023-08-24T18:05:49.801Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "3|laravel_sanctum_DMa38Fq23D1PCIrNeNcUbxv43SbWB5BL3uaMc2iO157da51e"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6b3ea658-29a7-4a6d-8d59-4a892b741c58",
+            "colId": "026584b1-c768-4fe9-9c89-5901f4f0bef5",
+            "containerId": "",
+            "name": "Memberships",
+            "url": "http://127.0.0.1:8000/api/user/memberships",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-24T17:19:34.628Z",
+            "modified": "2023-08-24T17:29:14.741Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "1|laravel_sanctum_0lk7VGfcuhTUzlWucxj1MDFnX14wWCpL1tcx8iRO0fba3f4b"
+            },
+            "tests": []
+        }
+    ]
+}
