@@ -33,4 +33,10 @@ class UserController extends Controller
     {
         return response()->json(User::find(auth('sanctum')->user()->id));
     }
+
+    public function memberships(Request $request): JsonResponse
+    {
+        $memberships = User::find(auth('sanctum')->user()->id)->memberships;
+        return response()->json($memberships[0]);
+    }
 }

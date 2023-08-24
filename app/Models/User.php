@@ -46,6 +46,6 @@ class User extends Authenticatable
 
     public function memberships(): HasMany
     {
-        return $this->hasMany(Membership::class);
+        return $this->hasMany(Membership::class, 'user_id');
     }
 }

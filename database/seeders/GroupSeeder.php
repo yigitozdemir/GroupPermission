@@ -12,6 +12,19 @@ class GroupSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        \App\Models\Group::factory()->create([
+            'name' => 'Group 1',
+            'description' => 'Group 1'
+        ]);
+
+        \App\Models\Group::factory()->create([
+            'name' => 'Group 2',
+            'description' => 'Group 2'
+        ]);
+
+        \App\Models\Group::factory()->create([
+            'name' => 'Group 3',
+            'description' => 'Group 3'
+        ]);
     }
 }
