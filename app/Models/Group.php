@@ -14,4 +14,6 @@ class Group extends Model
         'name',
         'description'
     ];
+
+    
 }

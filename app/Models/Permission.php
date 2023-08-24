@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Permission extends Model
 {
@@ -13,4 +14,9 @@ class Permission extends Model
         'group_id',
         'permission'
     ];
+
+    public function group(): HasOne
+    {
+        return $this->hasOne(Group::class);
+    }
 }
